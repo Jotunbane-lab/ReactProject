@@ -13,11 +13,16 @@ export function CreationButton(props) {
         setText("");
     }
 
+    function validate(){
+        if (text ==="") return false;
+        return new Date() < date;
+    }
+
     return <div>
 
         <input placeholder="enter task" value={text} onChange={(event => setText(event.currentTarget.value))}/>
         <input type={"date"} value={date} onChange={(event => setDate(event.currentTarget.value))}/>
-        <button onClick={addTask} disabled={text===""}>add</button>
+        <button disabled={!validate()} onClick={addTask}>add</button>
 
 
     </div>
