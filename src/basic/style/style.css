@@ -3,3 +3,10 @@
     border: 2px solid black;
     padding: 5px;
 }
+
+.done{
+    background-color: darkgray;
+    color: gray;
+    text-decoration: line-through;
+}
+

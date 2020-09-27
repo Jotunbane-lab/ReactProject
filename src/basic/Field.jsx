@@ -5,11 +5,7 @@ export function Field(props){
     const Deadline = (props.task.deadLine);
     const fieldState = (props.task.done);
 
-    if (fieldState){
-        let
-    }
-
-    return <div className={"field"}>
+    return <div className={"field " +(fieldState && "done")}>
         {props.task.text}
 
 
