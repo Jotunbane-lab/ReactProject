@@ -1,10 +1,12 @@
 import React from "react";
 
 export function Field(props){
-    const flag = props.flag;
+
+    const isDeadline = props.task.isDeadline;
+
 
     return <div className={"field"}>
-        {props.text}
+        {props.task.text}
 
 
     </div>
