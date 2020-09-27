@@ -1,5 +1,5 @@
 import React from "react";
-import {Field} from "./pole";
+import {Field} from "./Field";
 
 export function List(props) {
     const array = [
