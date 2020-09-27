@@ -2,7 +2,7 @@ import React from "react";
 
 export function Field(props){
 
-    const isDeadline = props.task.isDeadline;
+    const isDeadline = (props.task.isDeadline || false);
 
 
     return <div className={"field"}>
