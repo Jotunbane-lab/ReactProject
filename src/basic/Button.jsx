@@ -3,7 +3,7 @@ import React from "react";
 export function Button(props) {
 
     function handleButtonClick() {
-        props.onchange(props.task)
+        props.onChange(props.task)
     }
 
     return <span>

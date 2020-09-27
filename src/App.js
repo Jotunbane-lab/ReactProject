@@ -5,7 +5,7 @@ import {List} from "./basic/List";
 import {Button} from "./basic/Button";
 
 function App() {
-  return <Button/>
+  return <List/>
 
 }
 
