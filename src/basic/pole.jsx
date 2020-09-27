@@ -1,10 +1,10 @@
 import React from "react";
 
-export function GenerujPole(ifDeadline){
-    const flag = ifDeadline.flag;
+export function Field(props){
+    const flag = props.flag;
 
-    return <div className={"pole"}>
-        <input type={"textarea"}/>
+    return <div className={"field"}>
+        {props.text}
 
 
     </div>
