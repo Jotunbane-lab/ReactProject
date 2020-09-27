@@ -1,5 +1,6 @@
 import React from "react";
 import {Field} from "./Field";
+import {CreationButton} from "./CreationButton";
 
 export function List(props) {
     const[tasks, setTasks] = React.useState([
@@ -16,9 +17,13 @@ export function List(props) {
     function renderTask(task, index) {
         return <Field task={task} key={index} onChange={handleChange}/>
     }
+    function handleNewTaskCreation(newTask){
+        setTasks([...tasks, newTask]);
+    }
 
     return <div>
         {tasks.map(renderTask)}
+        <CreationButton onCreate={handleNewTaskCreation}/>
     </div>
 
 }

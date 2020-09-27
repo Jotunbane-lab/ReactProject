@@ -1,15 +1,20 @@
 import React from "react";
 
-export function CreationButton(props){
-    function addTask(){
-        const el = "0";
-        return props.tasks.contact([el]);
+export function CreationButton(props) {
+    const [text, setText] = React.useState("");
+
+    function addTask() {
+        props.onCreate({
+            done: false,
+            text: text
+        });
     }
-    return<div>
-        <form>
-            <label htmlFor="newInput">Dodaj zadanie</label>
-            <input type={"textarea" } required id={"newInput"}/>
-            <button onClick={addTask}>Wyślij</button>
-        </form>"
+
+    return <div>
+
+        <input placeholder="enter task" value={text} onChange={(event => setText(event.currentTarget.value))}/>
+        <button onClick={addTask} disabled={text===""}>add</button>
+
+
     </div>
 }
