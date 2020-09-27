@@ -10,8 +10,7 @@ export function List(props) {
 
     function handleChange(task) {
         task.done = !task.done;
-        console.log(tasks);
-        setTasks(tasks.splice(tasks.indexOf(task),1, task));
+        setTasks([...tasks]);
     }
 
     function renderTask(task, index) {
