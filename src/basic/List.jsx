@@ -3,7 +3,7 @@ import {Field} from "./Field";
 import {CreationButton} from "./CreationButton";
 
 export function List(props) {
-    const[tasks, setTasks] = React.useState([]);
+    const [tasks, setTasks] = React.useState([]);
 
     function handleChange(task) {
         task.done = !task.done;
@@ -13,7 +13,8 @@ export function List(props) {
     function renderTask(task, index) {
         return <Field task={task} key={index} onChange={handleChange}/>
     }
-    function handleNewTaskCreation(newTask){
+
+    function handleNewTaskCreation(newTask) {
         setTasks([...tasks, newTask]);
     }
 

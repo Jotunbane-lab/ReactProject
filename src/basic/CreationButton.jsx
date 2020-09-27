@@ -2,7 +2,7 @@ import React from "react";
 
 export function CreationButton(props) {
     const [text, setText] = React.useState("");
-    const [date, setDate] = React.useState(0);
+    const [date, setDate] = React.useState("");
 
     function addTask() {
         props.onCreate({
@@ -11,11 +11,13 @@ export function CreationButton(props) {
             date: date
         })
         setText("");
+        setDate("");
     }
 
     function validate(){
+        const now = new Date();
         if (text ==="") return false;
-        return new Date() < date;
+        return now < date;
     }
 
     return <div>

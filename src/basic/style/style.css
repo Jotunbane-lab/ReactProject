@@ -10,3 +10,10 @@
     text-decoration: line-through;
 }
 
+.deadline{
+    color: red;
+    font-weight: bolder;
+    background-color: indianred;
+    border: 2px solid red;
+}
+

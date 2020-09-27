@@ -7,6 +7,6 @@ export function Button(props) {
     }
 
     return <span>
-        <button onClick={handleButtonClick}>{props.task.done? "UNDONE" : "DONE"}</button>
+        <button onClick={handleButtonClick}>{props.task.done ? "UNDONE" : "DONE"}</button>
     </span>
 }
