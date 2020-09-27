@@ -5,7 +5,7 @@ export function List(props) {
     const[tasks, setTasks] = React.useState([
         {text: 'Ala'},
         {text: 'ma'},
-        {text: 'kota'}
+        {text: 'kota', state: 'done'}
     ]);
 
     
