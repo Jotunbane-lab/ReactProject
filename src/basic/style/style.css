@@ -5,15 +5,14 @@
 }
 
 .done{
-    background-color: darkgray;
-    color: gray;
-    text-decoration: line-through;
+    background-color: darkgray !important;
+    color: gray !important;
+    text-decoration: line-through !important;
 }
 
 .deadline{
     color: red;
     font-weight: bolder;
-    background-color: indianred;
     border: 2px solid red;
 }
 
